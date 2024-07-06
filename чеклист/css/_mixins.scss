@@ -1,0 +1,44 @@
+@mixin mobile {
+    @media (min-width: $mobile-width) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: $pad-width) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media (min-width: $desktop-mini-width) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: $desktop-width) {
+        @content;
+    }
+}
+
+@mixin to-width($max-width) {
+    @media (max-width: $max-width) {
+        @content;
+    }
+}
+
+@mixin from-width($min-width) {
+    @if $min-width !=0 {
+        @media (min-width: $min-width) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}
+
+@mixin flex($display: flex, $dir: row, $wrap: nowrap, $jc: center, $ai: center) {
+    display: $display;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $jc;
+    align-items: $ai;
+}

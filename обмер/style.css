@@ -1,0 +1,30 @@
+.calc {
+    width: 50%;
+    font-size: 18px;
+}
+.calc__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+input {
+    font-size: 18px;
+}
+.calc__btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 50%;
+}
+#output {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}

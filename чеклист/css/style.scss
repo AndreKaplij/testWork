@@ -1,0 +1,113 @@
+@import './variables';
+@import './mixins';
+@import './reset';
+
+
+.container {
+    margin: 0 auto;
+    max-width: $container;
+    padding: 0 20px;
+}
+.checkList {
+    padding-top: 16px;
+    padding-bottom: 16px; 
+    background-color: $blue;    
+    color: $white;
+    border-radius: 10px;    
+
+}
+.checkList__top {
+    @include mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    } 
+}
+.checkList__wrap {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    @include mobile {
+        margin-bottom: 0;
+    } 
+}
+.checkList__progress {
+    position: relative;
+    margin-right: 16px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.checkList__progress-number {
+    font-size: $fs-xl;
+}
+.checkList__progress-svg {
+    position: absolute;
+}
+.checkList__box {
+    margin-right: 16px;
+    width: fit-content;
+}
+.checkList__box-name {
+    display: block;
+    margin-bottom: 4px;
+    padding: 2px 13px;
+    width: fit-content;
+    border-radius: 40px;
+    font-size: $fs-xs;
+    background-color: $blue2;
+}
+.checkList__box-text {
+    display: block;
+    margin-bottom: 4px;
+    font-size: $fs-l;
+    font-weight: 600;
+}
+.checkList__box-descr {
+    font-size: $fs-xs;
+}
+.checkList__btn {
+    display: block;
+    padding: 10px 25px;    
+    font-size: $fs-s;
+    background-color: $white2;
+    color: $blue3;
+    border-radius: 6px;
+    text-align: center;
+    width: 100%;    
+    transition: background-color 0.3s ease-in-out;
+    @include mobile {
+        flex-shrink: 0;
+        width: fit-content;
+    }
+    &:hover {
+        background-color: rgba($white2, .8);
+    } 
+}
+.checkboxes {
+    display: none;
+    opacity: 0;
+    margin-top: 16px;
+    transition: opacity 1s ease-in-out;
+    @include mobile {
+        margin-left: 76px; 
+    } 
+}
+.checkboxes__box {
+    display: flex;
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+.checkboxes__checkbox {
+    display: block;
+    margin-right: 16px;
+}
+.checkboxes-active {
+    opacity: 1;
+    display: block;
+    
+}

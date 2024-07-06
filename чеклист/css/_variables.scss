@@ -1,0 +1,69 @@
+/* Breakpoints */
+$mobile-width: 560px;
+$pad-width: 768px;
+$desktop-mini-width: 1120px;
+$desktop-width: 1300px;
+$desktop-large-width: 1520px;
+
+/* Sizes */
+$html-min-width: 540px;
+$html-max-width: 1920px;
+$html-mobile-edge-offset: 32px;
+//$header-height-mobile: 48px;
+//$header-height-tablet: 76px;
+
+/* Containers */
+$container: 740px;
+$header-height-mobile: 48px;
+$header-height-tablet: 76px;
+
+/* Colors */
+
+$black: #000000;
+$blue:#3579F5;
+$blue2: #2364DB;
+$blue3:#4777ED;
+$white: #FFFFFF;
+$white2: #F4F8FF;
+
+/* Font Family */
+$text-helper: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+'Noto Color Emoji';
+$family-main: Arial, $text-helper;
+
+$font-main: 'inter';
+
+/* Font Size */
+$fs-xs: 12px;
+$fs-s: 14px;
+$fs-l: 15px;
+$fs-xl: 20px;
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'inter';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/Inter-Regular.woff2) format("woff2");
+    src: url(../fonts/Inter-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: 'inter';
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/Inter-SemiBold.woff2) format("woff2");
+    src: url(../fonts/Inter-SemiBold.woff) format("woff");
+} 
+
+
+

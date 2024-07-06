@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обмер</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    <div class="calc">
+        <table id="table" class="calc__table">
+            <thead>
+                <tr>
+                    <th>Длина, мм</th>
+                    <th>Угол, &deg;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="number" value="1665"></td>
+                    <td><input type="number" value="0"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="947"></td>
+                    <td><input type="number" value="90"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="557"></td>
+                    <td><input type="number" value="0"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="1300"></td>
+                    <td><input type="number" value="90"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="2225"></td>
+                    <td><input type="number" value="180"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" value="2239"></td>
+                    <td><input type="number" value="270"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="calc__btn" onclick="calculation()">Расчет</button>
+        <div id="output" class="output"></div>
+        <svg id="svg" width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+            <path id="svgPath"  d="" stroke="black" fill="none"></path>
+        </svg>
+    </div>
+
+
+</body>
+</html>
